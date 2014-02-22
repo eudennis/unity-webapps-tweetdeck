@@ -1,15 +1,12 @@
 // ==UserScript==
-// @include        https://*.evernote.com/*
-// @include        https://www.evernote.com/*
-// @include        https://*.evernote.com/
-// @include        http://www.evernote.com/*
+// @include        https://tweetdeck.twitter.com/*
 // @require        utils.js
 // ==/UserScript==
 
 window.Unity = external.getUnityObject(1);
 
-Unity.init({ name: 'Evernote',
-             domain: 'evernote.com',
-         homepage: 'http://www.evernote.com/',
-             iconUrl: 'icon://unity-webapps-evernote',
+Unity.init({ name: 'Tweetdeck',
+             domain: 'tweetdeck.twitter.com',
+         homepage: 'http://tweetdeck.twitter.com/',
+             iconUrl: 'icon://unity-webapps-tweetdeck',
              onInit: wrapCallback(unityLoaded) });
